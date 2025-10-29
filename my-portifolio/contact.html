@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Alexandre Sumbane</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">Alexandre Sumbane</div>
+      <div class="logo">Alexandre <span>Sumbane</span></div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -21,13 +22,51 @@
   </header>
 
   <section class="contact">
-    <h2>Contact Me</h2>
-    <form onsubmit="return validateForm()">
-      <input type="text" id="name" placeholder="Your Name">
-      <input type="email" id="email" placeholder="Your Email">
-      <textarea id="message" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2 class="section-title">Get In Touch</h2>
+          <p>I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to work together or just say hello!</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <span>alexandresumbane7@gmail.com</span>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-phone"></i>
+              <span>+258 84 756 6176</span>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Maputo, Mozambique</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Alexandre-Sumbane" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alexandre-sumbane-18b423315/" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/share/1GgqiEHmWQ/?mibextid=LQQJ4d" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/professor_alexy_sumbane?igsh=MTRkejlkeGVlZ3UxMA%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script src="js/script.js"></script>
